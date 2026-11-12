@@ -13,8 +13,7 @@ print(type(lenguajes_programacion))  # Salida: <class 'set'>
 print(type(libro))  # Salida: <class 'dict'>
 
 print(top_peliculas[0])  # Acceso por índice: Salida: The Shawshank Redemption
-print(coordenadas_CDMX[0])  # Acceso por índice: Salida: 19.4326
-print(list(lenguajes_programacion)[0])  # Salida: Python (El orden puede variar, ya que los sets no tienen un orden fijo)
-print(libro["Titulo"])  # Acceso por clave: Salida: Misery
 
-coordenadas_CDMX[0] = 20.0  # Esto dará un error porque las tuplas son inmutables
+#coordenadas_CDMX[0] = 20.0  # TypeError: 'tuple' object does not support item assignment
+
+print(list(lenguajes_programacion))  # Convertir set a lista para mostrar elementos: Salida: ['Python', 'C++', 'JavaScript']
